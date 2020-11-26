@@ -6,7 +6,7 @@ exports.config = {
   // path relative to the current config file
   frameworkPath: require.resolve('protractor-cucumber-framework'),
   capabilities: {
-    'browserName': 'firefox'
+    'browserName': 'chrome'
   },
 
   // Spec patterns are relative to this directory.
@@ -17,9 +17,9 @@ exports.config = {
   baseURL: 'http://localhost:8080/',
 
   cucumberOpts: {
-    require: 'features/step_definitions/steps.js',
+    require: 'features/support/steps.js',
     tags: false,
-    format: 'pretty',
+    format: false,
     profile: false,
     'no-source': true
   }

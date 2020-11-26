@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	  "cucumber": "node .\\node_modules\\cucumber\\bin\\cucumber-js .\\features\\test.feature"
+    "cucumber": "node .\\node_modules\\cucumber\\bin\\cucumber-js .\\features\\test.feature"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,12 @@
   "homepage": "https://github.com/andresap2150/metrocuadrado_ui_fw#readme",
   "devDependencies": {
     "cucumber": "^6.0.5",
+    "pretty": "^2.0.0",
+    "protractor": "^7.0.0",
     "protractor-cucumber-framework": "^6.2.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1"
+  }
 }
